@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "33012dd1-dec2-420f-9b9a-47f8cf60ca66",
+		"name": "Favorite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5407737"
+	},
+	"item": [
+		{
+			"name": "favorites",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjkxMzAzMjk1LCJleHAiOjE2OTEzMDY4OTUsIm5iZiI6MTY5MTMwMzI5NSwianRpIjoiZjFyV2N3Z0Zia3VJeW1kViIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vkSVcrrucLUgfxlwKxXonTVpXvMq48DKKjdieAoGqL0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/favorites",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"favorites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove from favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjkxMzAzMjk1LCJleHAiOjE2OTEzMDY4OTUsIm5iZiI6MTY5MTMwMzI5NSwianRpIjoiZjFyV2N3Z0Zia3VJeW1kViIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vkSVcrrucLUgfxlwKxXonTVpXvMq48DKKjdieAoGqL0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/favorites/33",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"favorites",
+						"33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add to favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjkxMzAzMjk1LCJleHAiOjE2OTEzMDY4OTUsIm5iZiI6MTY5MTMwMzI5NSwianRpIjoiZjFyV2N3Z0Zia3VJeW1kViIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vkSVcrrucLUgfxlwKxXonTVpXvMq48DKKjdieAoGqL0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/favorites/33",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"favorites",
+						"33"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

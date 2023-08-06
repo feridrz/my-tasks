@@ -1,0 +1,1 @@
+<?= "feel free to change mysql version inside docker-compose.yml file" ?>
